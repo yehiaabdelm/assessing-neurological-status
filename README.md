@@ -1,6 +1,6 @@
 # Assessing Neurological States Using non-EEG Data
 The data used in the project is available at https://physionet.org/content/noneeg/1.0.0/
-We use non-EEG physiological signals such as accelerometer, temperature, and EDA signals, arterial oxygen level (SpO2) and heart rate signals to classify the state that a patient is in. The feature vector constructed is shown below.
+We use non-EEG physiological signals such as accelerometer, temperature, and EDA signals, arterial oxygen level (SpO2) and heart rate signals to classify the state (i.e. Relaxed, Physically Stressed, etc) that a patient is in. The feature vector constructed is shown below.
 
 ## Feature Vector
 ![Artboard.png](Artboard.png)
@@ -10,6 +10,5 @@ We are splitting the signal for each subject into multiple observations. We do t
 Note: The first readings (i.e. ax, ay, az, temp, EDA) are 8 samples/s while the second readings (i.e. SpO2 and HR) are 1 sample/s therefore we always take 8 times the number of samples from the first reading compared to the second reading.
 
 # References
-```
+
 Birjandtalab, Javad, Diana Cogan, Maziyar Baran Pouyan, and Mehrdad Nourani, A Non-EEG Biosignals Dataset for Assessment and Visualization of Neurological Status, 2016 IEEE International Workshop on Signal Processing Systems (SiPS), Dallas, TX, 2016, pp. 110-114. doi: 10.1109/SiPS.2016.27
-```
